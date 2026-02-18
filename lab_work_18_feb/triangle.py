@@ -1,7 +1,8 @@
-a=int(input("Enter first angle"))
-b=int(input("Enter second angle"))
-c=int(input("Enter third angle"))
-if a>0 and b>0 and c>0 and (a+b+c)==180:
+angle1=float(input("Enter first angle"))
+angle2=float(input("Enter second angle"))
+angle3=float(input("Enter third angle"))
+if angle1>0 and angle2>0 and angle3>0 and (angle1+angle2+angle3)==180:
     print("Valid Triangle")
 else:
     print("Invalid Triangle")
+
