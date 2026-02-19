@@ -1,5 +1,5 @@
 # Daily Expense Tracker (Improved Version)
-# No predefined functions used
+
 
 total = 0
 
@@ -37,3 +37,4 @@ while True:
         print("Invalid input")
 
 print("Total Expense =", total)
+
