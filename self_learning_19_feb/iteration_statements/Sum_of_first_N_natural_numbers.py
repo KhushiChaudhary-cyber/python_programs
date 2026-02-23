@@ -1,3 +1,5 @@
+#sum off first n numbers
+
 while True:
     n = input("Enter a positive integer: ")
     if n.isdigit() and int(n) > 0:
@@ -14,3 +16,4 @@ while i <= n:
     i = i + 1
 
 print("Sum =", total)
+
