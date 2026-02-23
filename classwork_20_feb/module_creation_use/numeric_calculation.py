@@ -10,9 +10,9 @@ def calculate_subtraction(a, b):
   
     print("The result of subtracting {b} from {a} is: ", a - b)
 
-def displaye_multiplication(a, b):
+def display_product(a, b):
     return a * b
-def calculate_multiplication(a, b):
+def calculate_product(a, b):
     
     print("The result of multiplying {a} and {b} is: ", a * b)
 
@@ -29,3 +29,4 @@ def display_remainder(a, b):
 def calculate_remainder(a, b):
    
     print("The remainder of dividing {a} by {b} is:", (a % b))
+
