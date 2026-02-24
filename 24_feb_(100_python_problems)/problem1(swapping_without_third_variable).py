@@ -1,6 +1,6 @@
 # Read first input
 a = input("Enter first number ")
-
+#validation of first number
 
 valid = True
 i = 0
@@ -24,7 +24,7 @@ if not valid:
 else:
     # Read second input
     b = input("Enter second number")
-
+    #validation of second number
     valid = True
     i = 0
 
