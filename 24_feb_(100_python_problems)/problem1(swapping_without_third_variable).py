@@ -1,19 +1,66 @@
-#swapping of two number without third variable
-a = int(input("Enter first number :"))
-b = int(input("Enter second number :"))
+# Read first input
+a = input("Enter first number ")
 
-# Swap using arithmetic operations
-a = a + b
-b = a - b
-a = a - b
-print("after swapping")
-print("first number is ",a)
-print("second number is ",b)
 
-'''output 
-Enter first number :34
-Enter second number :36
-after swapping
-first number is  36
-second number is  34
-'''
+valid = True
+i = 0
+
+if len(a) == 0:
+    valid = False
+else:
+    if a[0] == '-':
+        if len(a) == 1:
+            valid = False
+        i = 1
+
+    while i < len(a):
+        if a[i] < '0' or a[i] > '9':
+            valid = False
+            break
+        i += 1
+
+if not valid:
+    print("Invalid Input")
+else:
+    # Read second input
+    b = input("Enter second number")
+
+    valid = True
+    i = 0
+
+    if len(b) == 0:
+        valid = False
+    else:
+        if b[0] == '-':
+            if len(b) == 1:
+                valid = False
+            i = 1
+
+        while i < len(b):
+            if b[i] < '0' or b[i] > '9':
+                valid = False
+                break
+            i += 1
+
+    if not valid:
+        print("Invalid Input")
+    else:
+        a = int(a)
+        b = int(b)
+
+        # Swap without third variable
+        a = a + b
+        b = a - b
+        a = a - b
+
+        print(a)
+        print(b)
+'''output
+Enter first number 54
+Enter second number44
+44
+54
+
+output 2:
+Enter first number abc
+Invalid Input'''
